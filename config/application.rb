@@ -23,6 +23,13 @@ module RailsLongestWordGame
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
+    Rails.application.config.session_store :cookie_store, key: '_your_app_session'
+
+
+    # config.after_initialize do
+    #   session.clear
+    # end
+
     # Configuration for the application, engines, and railties goes here.
     #
     # These settings can be overridden in specific environments using the files

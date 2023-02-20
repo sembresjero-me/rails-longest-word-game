@@ -1,0 +1,11 @@
+<div class="container">
+  <div class="row">
+  <h1 class="text-center my-5">Result</h1>
+  <ul class="list-group list-group-horizontal text-center px-5 mb-5">
+    <p><%= @answer %></p>
+    <p><%= @score %></p>
+    <p><%= session.inspect %></p>
+  </ul>
+  <%= link_to "Play again", new_path %>
+  </div>
+</div>
